@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define ITEM int
-#define S 100
+#define S 10
 typedef struct 
 {
     ITEM arr[S];
@@ -25,7 +25,7 @@ int main()
     init(&s);
     while(1)
     {
-        printf("******M E N U*****\n");
+        printf("******M E N U*****\n\n");
         printf("Press 1 Initialize.\n");
         printf("Press 2 check it's ful or not.\n");
         printf("Press 3 check it's empty or not.\n");
@@ -55,7 +55,7 @@ int main()
                 break;
             case 4:
                 if(isFull(&s)==1)
-                    printf("Overflow");
+                    printf("Overflow\n");
                 else
                 {
                     printf("Enter the data you want to push into your stack :");
@@ -65,7 +65,7 @@ int main()
                 break;
             case 5:
                 if(isEmpty(&s)==1)
-                    printf("Underflow");
+                    printf("Underflow\n");
                 else
                 {
                     printf("The poped out element = %d\n\n",pop(&s));
